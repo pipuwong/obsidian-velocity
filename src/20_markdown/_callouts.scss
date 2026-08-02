@@ -1,7 +1,7 @@
 .callout .callout-content {
 	--code-background: var(--code-background-alt);
 	--blockquote-color: var(--color-base-80);
-	--blockquote-border-color: rgb(var(--callout-color), 0.75);
+	--blockquote-border-color: color-mix(in srgb, var(--callout-color) 75%, transparent);
 	--math-color: var(--color-base-100);
 }
 body:not(.disable-callout-styling) {
@@ -24,10 +24,10 @@ body:not(.disable-callout-styling) {
 		contain: content;
 		color: var(--text-normal);
 		background: radial-gradient(180% 60% at 50% 0%, 
-		rgb(var(--callout-color), 0.0625),
-		rgb(var(--callout-color), 0.1125));
+		color-mix(in srgb, var(--callout-color) 6.25%, transparent),
+		color-mix(in srgb, var(--callout-color) 11.25%, transparent));
 		box-shadow: 
-		0 0 0 1.75px rgb(var(--callout-color), var(--callout-border-opacity));
+		0 0 0 1.75px color-mix(in srgb, var(--callout-color) calc(var(--callout-border-opacity) * 100%), transparent);
 		outline: 1px solid var(--background-primary);
 		margin-block: var(--block-padding);
 	}

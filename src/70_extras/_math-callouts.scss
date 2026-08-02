@@ -1,7 +1,7 @@
 body:not(.disable-callout-styling) .callout[data-callout*="math"] {
 	color: var(--color-base-100);
 	background-image: unset;
-	box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.375);
+	box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--callout-color) 37.5%, transparent);
 	outline: unset;
 	--callout-color: var(--color-blue-rgb);
 
@@ -47,6 +47,6 @@ body:not(.disable-callout-styling) .callout[data-callout="math-pink"] {
 }
 body:not(.disable-callout-styling) 
 	.callout:is([data-callout="math-gray"], [data-callout="math-grey"]) {
-	box-shadow: 0 0 0 1.5px rgb(var(--callout-color), 0.5);
-	--callout-color: 100, 100, 100;
+	box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--callout-color) 50%, transparent);
+	--callout-color: rgb(100, 100, 100);
 }

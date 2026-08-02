@@ -12,9 +12,9 @@
 }
 .callout-content #calendar-container {
     padding-top: 1rem;
-    --color-dot: rgb(var(--callout-color));
-    --color-text-today: rgb(var(--callout-color));
-    --table-highlight: rgb(var(--callout-color), 0.1);
+    --color-dot: var(--callout-color);
+    --color-text-today: var(--callout-color);
+    --table-highlight: color-mix(in srgb, var(--callout-color) 10%, transparent);
 }
 
 .mod-sidedock .workspace-leaf-content[data-type="calendar"] > .view-content {

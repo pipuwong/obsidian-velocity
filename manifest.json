@@ -2,8 +2,11 @@
 	"name": "Velocity",
 	"repo": "Gonzalo-D-Sales/obsidian-velocity",
 	"version": "2.2.0",
-	"minAppVersion": "1.11.0",
+	"minAppVersion": "1.13.0",
 	"author": "Floodlight",
 	"screenshot": "./assets/thumbnail.png",
-	"modes": ["light", "dark"]
+	"modes": [
+		"light",
+		"dark"
+	]
 }
