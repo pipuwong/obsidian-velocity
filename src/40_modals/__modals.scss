@@ -8,6 +8,7 @@ body:not(.is-mobile)
 :is(.mod-settings::before,
 .modal-sidebar::before,
 .modal .modal-close-button,
+.modal .modal-header-button,
 .prompt .search-input-clear-button) {
 	display: none;
 }
@@ -78,8 +79,8 @@ body:not(.is-phone) .modal-container > .modal.mod-settings {
 	background-color: transparent;
 	border-inline-end-color: transparent;
     max-width: 268px;
-	padding-block-start: calc(var(--vl-layout-padding) + 18px);
-	padding-inline: 20px 16px;
+	padding-block-start: calc(var(--vl-layout-padding));
+	padding-inline: 8px 0;
 }
 .modal-container.mod-dim .vertical-tab-content {
 	background-color: transparent;
@@ -133,34 +134,21 @@ body:not(.is-phone) .vertical-tab-header-group-title {
 	clip-path: inset(0.0625px -24px -24px -24px);
 }
 
+.setting-group > .setting-items {
+  padding-block: 2px;
+}
+
 .setting-group + .setting-group {
 	margin-block-start: 28px;
 }
 .setting-group .setting-item-heading {
 	font-variation-settings: 'opsz' 28;
 	margin-block-end: 12px;
-	padding-inline-start: 21px;
+	padding-inline-start: var(--setting-items-padding-x);
 }
-.mod-settings .setting-group > .setting-items .setting-item {
-	padding-inline: 5px 4px;
-}
+
 .setting-items .setting-item {
 	contain: layout;
-	padding-block: calc(var(--vl-layout-padding) + 8px);
-	border-block-start-color: transparent;
-	&::after {
-		content: '';
-		contain: content;
-		position: absolute;
-		bottom: -1px;
-		inset-inline: 1px;
-		background-color: var(--color-base-10);
-		border-radius: var(--radius-s);
-		padding-block: 0.05em;
-	}
-	&:last-child::after {
-		display: none;
-	}
 }
 
 .setting-item {

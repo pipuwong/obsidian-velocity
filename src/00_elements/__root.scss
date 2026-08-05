@@ -56,7 +56,7 @@ body {
     // Buttons
 
     // Canvas
-    --canvas-color-5: var(--color-blue-rgb);
+    --canvas-color-5: var(--color-blue);
 
     // Caret (text entry cursor)
 
@@ -288,6 +288,8 @@ body {
     --setting-items-padding: calc(var(--vl-layout-padding) + 8px);
     --setting-items-radius: calc(var(--radius-ml) + 2px);
     --setting-items-border-width: 0;
+    --setting-items-padding-x: calc(var(--vl-layout-padding) + 12px);
+    --setting-items-padding-y: calc(var(--vl-layout-padding) + 8px);
 
     // Sidebar toggles
     --sidebar-left-toggle-inner-width: 12%;
