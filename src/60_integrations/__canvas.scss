@@ -3,15 +3,11 @@
   --shadow-stationary: var(--shadow-canvas-node);
   --shadow-drag: 0px 0px transparent;
   --bases-table-header-background: var(--background-primary-alt);
-  --canvas-color: rgb(150, 150, 150);
 }
 
 // Canvas Nodes
 .canvas-node-container {
     background-color: var(--background-primary-alt);
-}
-.canvas-node > .canvas-node-container {
-    border-color: color-mix(in srgb, var(--canvas-color) 50%, transparent);
 }
 .canvas-node.is-focused > .canvas-node-container {
     border-color: transparent;
