@@ -56,7 +56,7 @@ body {
     // Buttons
 
     // Canvas
-    --canvas-color-5: var(--color-blue-rgb);
+    --canvas-color-5: var(--color-blue);
 
     // Caret (text entry cursor)
 
@@ -113,16 +113,16 @@ body {
     --font-ui-larger: 24px;
 
     // Font weights
-    --font-thin: 270;
-    --font-extralight: 305;
-    --font-light: 320;
-    --font-normal: 420;
-    --font-medium: 520;
-    --font-semibold: 620;
-    --font-bold: 720;
-    --font-extrabold: 820;
+    --font-thin: 275;
+    --font-extralight: 325;
+    --font-light: 350;
+    --font-normal: 400;
+    --font-medium: 525;
+    --font-semibold: 625;
+    --font-bold: 725;
+    --font-extrabold: 825;
 
-    --font-semi-medium: calc(var(--font-normal) + 70);
+    --font-semi-medium: calc(var(--font-normal) + 75);
     --font-normal-linux: var(--font-normal);
 
     // Footnotes
@@ -145,13 +145,13 @@ body {
     --h4-size: 1.25em;
     --h5-size: 1.125em;
     --h6-size: 1em;
-    --h1-weight-alt: 570;
-    --h1-weight: 330;
-    --h2-weight: 570;
-    --h3-weight: 570;
-    --h4-weight: 570;
-    --h5-weight: 620;
-    --h6-weight: 670;
+    --h1-weight-alt: 600;
+    --h1-weight: 340;
+    --h2-weight: 600;
+    --h3-weight: 600;
+    --h4-weight: 600;
+    --h5-weight: 650;
+    --h6-weight: 700;
 
     --header-height: 56px;
 
@@ -288,6 +288,8 @@ body {
     --setting-items-padding: calc(var(--vl-layout-padding) + 8px);
     --setting-items-radius: calc(var(--radius-ml) + 2px);
     --setting-items-border-width: 0;
+    --setting-items-padding-x: calc(var(--vl-layout-padding) + 12px);
+    --setting-items-padding-y: calc(var(--vl-layout-padding) + 8px);
 
     // Sidebar toggles
     --sidebar-left-toggle-inner-width: 12%;

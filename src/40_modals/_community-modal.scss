@@ -32,7 +32,7 @@ body:not(.is-phone) .mod-community-modal.mod-sidebar-layout {
 		row-gap: 6px;
 		padding: 8px;
 	}
-	.community-modal-controls > .setting-item:first-child {
+	.community-modal-controls > .community-modal-search {
 		padding: 3px 4px !important;
 		margin-inline-end: unset;
 	}	
@@ -52,15 +52,15 @@ body:not(.is-phone) .mod-community-modal .community-modal-controls > .setting-it
 	padding-inline: 0 8px;
 	padding-block: unset;
 }
-body:not(.is-phone) .community-modal-controls > .setting-item:first-child {
+body:not(.is-phone) .community-modal-controls > .community-modal-search {
 	margin-block: 0 !important;
 }
 body:not(.is-phone) .mod-community-modal .setting-item input {
 	--background-modifier-form-field: transparent;
 	--background-modifier-form-field-hover: transparent;
 }
-body:not(.is-phone) .mod-community-modal .community-modal-controls > .setting-item:first-child {
-	padding-inline: 8px;
+body:not(.is-phone) .mod-community-modal .community-modal-controls > .community-modal-search {
+	padding: 0 12px;
 	flex: 1;
 	margin-inline-end: auto;
 }
@@ -68,8 +68,9 @@ body:not(.is-phone) .mod-community-modal .community-modal-controls button.clicka
     padding: 6px;
 }
 body:not(.is-phone) .community-modal-controls > .setting-item.mod-toggle {
-	padding-inline: 0 16px;
+	padding-inline: 0 8px;
 	flex: 1;
+  align-items: center;
 	--modal-community-sidebar-width: 200px;
 }
 body:not(.is-phone) .community-modal-controls > .setting-item.mod-toggle > .setting-item-control {
@@ -104,8 +105,11 @@ body:not(.is-phone) .mod-community-theme .community-item {
 }
 body:not(.is-phone) .community-item.is-selected, 
 body:not(.is-phone) .community-item.is-selected:hover {
+  color: var(--text-muted);
 	background-color: var(--interactive-accent);
     box-shadow: var(--shadow-button);
+    --text-normal: var(--text-on-accent);
+    --text-muted: oklch(from var(--text-normal) l c h / 0.75);
 }
 body:not(.is-phone) .community-item-name {
 	display: flex;
@@ -118,6 +122,7 @@ body:not(.is-phone) .community-item-name {
 	margin-block-start: -2px;
 }
 body:not(.is-phone) .mod-community-theme .community-item-name {
+  color: var(--text-normal);
 	margin-block-start: unset;
 	padding-inline: 2px 0;
 }
@@ -136,6 +141,8 @@ body:not(.is-phone) .mod-community-theme .community-item-downloads {
 	padding-inline: 0 3px;
 	text-align: end;
 	text-box-trim: trim-both;
+  width: fit-content;
+  justify-self: end;
 }
 body:not(.is-phone) .community-item-screenshot {
 	display: grid;
@@ -155,7 +162,8 @@ body:not(.is-phone) .community-item-screenshot {
 body:not(.is-phone) .community-item-badge.mod-update {
 	contain: content;
 	color: var(--text-success);
-	background-color: color-mix(in oklab, var(--color-base-05), var(--color-base-10));
+	background-color: var(--settings-background);
+  background-image: linear-gradient(var(--modal-community-item-bg), var(--modal-community-item-bg));
 	border-radius: 0 var(--radius-sm) 0 var(--radius-sm);
 	margin: -9px;
 	padding: 7px 7px 4px 8px;
@@ -164,6 +172,7 @@ body:not(.is-phone) .community-item-badge.mod-update {
 body:not(.is-phone) .community-item.is-selected .community-item-badge.mod-update {
 	color: white;
 	background-color: var(--interactive-accent);
+  background-image: unset;
 }
 
 // FROM: Willemstad 
